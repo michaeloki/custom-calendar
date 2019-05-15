@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar App</title>
+		<link rel="stylesheet" href="css/calendar.css">
+        
+	</head>
+	<body>
+		      
+        <span id="calendarWidget" class="shown">
+            <table cellpadding="2" cellspacing="1" border="2" style="width:40%;height:30px;text-align:center;margin-left:30%;marin-right:30%;">
+                        <tr>
+                <td>
+                    <select name="month" id="month" style="width:50%;" onchange="getMonth();">
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+                </td>
+                <td>
+                    <div id="myYear" class="dropdown"></div>
+                </td>
+            </tr>
+            </table>
+        <table cellpadding="1" cellspacing="1" border="1" style="width:40%;height:350px;text-align:center;margin-left:30%;margin-right:30%;">
+            <tr id="calRow1"></tr>
+            <tr id="calRow2"></tr>
+            <tr id="calRow3"></tr>
+            <tr id="calRow4"></tr>
+            <tr id="calRow5"></tr>
+            </table>
+        </span>
+        <div id="dates"></div>
+        <div id="calendarNote" class="card hidden"><br>
+            <input type="text" id="noteTitle" placeholder="Your appointment title" style="padding:5px;" onfocus="hideMessage();" required><br><br>
+            <textarea id="noteBody" name="noteBody" rows="3" cols="15" placeholder="I am doing..." class="input-form" onfocus="hideMessage();" required></textarea><br>
+            <span class="btn-group">
+            <button onclick="addNewDate();" class="positive-button">Create</button>
+            <button onclick="editEntry();" class="caution-button">Edit</button><button onclick="deleteRecord();" class="negative-button">Delete</button><button class="neutral-button" onclick="Cancel();">Cancel</button><br>
+                <div id="message" class="warning"></div>
+            </span>
+        </div>
+        <script src="js/constants.js"></script>
+        <script src="js/calendar.js"></script>
+	</body>
+</html>

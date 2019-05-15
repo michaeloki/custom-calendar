@@ -1,0 +1,149 @@
+.myForm {
+    margin-top:50px;
+    text-align:center;
+    border-width: 80%;
+}
+
+.warning {
+    background-color: red;
+    color: #ffffff;
+    margin-top: 5px;
+    padding:12px 20px;
+    margin-left:15%;
+    width:70%;
+    text-align:center;
+    box-sizing: border-box;
+    display:none;
+}
+
+.success {
+    background-color: green;
+    color: #ffffff;
+    margin-top: 5px;
+    padding:12px 20px;
+    margin-left:15%;
+    width:70%;
+    text-align:center;
+    box-sizing: border-box;
+    display:none;
+}
+
+input[type=text] {
+    margin-top: 5px;
+    padding:12px 20px;
+    width:70%;
+    text-align:center;
+    box-sizing: border-box;
+}
+textarea {
+    width:70%;
+    height: 100px;
+    padding:12px 20px;
+    box-sizing:border-box;
+    background-color:#f8f8f8;
+    border-radius:4px;
+    resize:none;
+    border: 2px solid #ccc;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    margin-top: 10%;
+    margin-left:30%;
+    text-align: center;
+    height:300px;
+    width:40%;
+}
+
+select {
+    border-radius:0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width:inherit;
+    padding-left:10px;
+    font-style: bold;
+    padding: 5px 12px;
+    background-color:lightblue;
+}
+
+.container {
+    padding: 2px; 15px;
+}
+
+.white {
+    background-color: #FFFFFF;
+    padding: 5px;
+}
+
+.yellow {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.blue {
+    background-color: #add8e6;
+    padding: 5px;
+}
+
+.positive-button {
+    margin-top:5px;
+    padding:5px;
+    background-color:green;
+    color:white;
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    border-color: green;
+    text-align: center;
+}
+
+.caution-button {
+    margin-top:5px;
+    padding:5px;
+    background-color:#ffa500;
+    color:white;
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    border-color: #ffa500;
+    text-align: center;
+}
+
+.negative-button {
+    margin-top:5px;
+    padding:5px;
+    background-color:red;
+    color:white;
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    border-color: red;
+    text-align: center;
+}
+
+.neutral-button {
+    margin-top:5px;
+    padding:5px;
+    background-color:#f5f5f5;
+    color:black;
+    width: 100px;
+    height:40px;
+    border-radius: 5px;
+    border-color: #f5f5f5;
+    text-align: center;
+}
+
+.btn-group {
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.hidden {
+    display:none;
+}
+
+.shown {
+    display:block;
+}
